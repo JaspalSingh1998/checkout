@@ -1,0 +1,13 @@
+:root {
+  --form-heading: #4e5150;
+  --dark-gary: #333333;
+  --light-gray: #828282;
+  --accent: #f2994a;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
