@@ -24,6 +24,7 @@ body {
 }
 .container {
   max-width: 1000px;
+  margin: 0 auto;
   padding: 2rem 1rem;
 }
 .section-heading {
@@ -38,6 +39,7 @@ img {
 .inner-wrapper {
   display: grid;
   gap: 2.5rem;
+  width: 100%;
 }
 .checkout-wrapper {
   order: -1;
@@ -85,6 +87,7 @@ img {
   background-color: #e0e0e0;
   padding: 0.1rem 0.25rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 .shipping,
 .total {
@@ -131,17 +134,38 @@ i {
 }
 .double {
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   justify-content: space-between;
   gap: 0.5rem;
 }
-
+.checkbox {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+input[type="checkbox"] {
+  margin-right: 1rem;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  margin-top: 1.5rem;
+  color: #fff;
+  background-color: var(--accent);
+  font-weight: 600;
+  outline: none;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
-  .container {
-    margin: 0 auto;
-  }
   .inner-wrapper {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
     gap: 10rem;
   }
   .checkout-wrapper {
